@@ -1,0 +1,90 @@
+body{
+  background-color:#000;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  width: 400px;
+  margin: 8em auto;
+  background-color: darkslategray;
+  border-radius: 40px;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  max-width: 400px;
+ 
+  .screen{
+    background-color: darkgray;
+    color: indigo;
+    width: 300px;
+    height: 4em;
+    margin: 0em auto;
+    border-radius: 20px;
+    text-align: right;
+    padding-right: 2em;
+    .result{
+      font-size: 30px;
+    }
+  }
+  .calc__body{
+    background-color: dimgrey;
+    width: 300px;
+    height: 80%;
+    margin:  1em auto;
+    border-radius: 40px;
+    .calc__math{
+      background-color: grey;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 40px;
+      padding: 0.5em 1em;
+      .calc__math__sign{
+        text-align: center;
+        width: 60px;
+        height: 40px;
+        font-size: 24px;
+        font-weight: bolder;
+        background-color: lightslategray;
+        color: gold;
+        cursor: pointer;
+        margin-left: 0.5em;
+        margin-top: 0.5em;
+        border-radius: 40px; 
+        padding-top: 0.3em;   
+        &:hover{
+          background-color: darkslategray;
+          color: floralwhite;
+        }
+      }
+      
+    }
+  }
+  .calc__num__main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    text-align: center;
+    .calc__num{
+      width: 70px;
+      height: 50px;
+      margin-left: 0.5em;
+      margin-bottom: 0.5em;
+      padding-top: 0.5em;
+      background-color: lightslategray;
+      border-radius: 40px;
+      &:hover{
+        background-color: darkslategray;
+        color: ivory;
+        cursor: pointer;
+      }
+    }
+  }
+  
+}
+#equal{
+  background-color: darkslategray;
+  &:hover{
+ background-color: olive;
+ color: oldlace;
+  }
+}
